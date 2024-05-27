@@ -1,28 +1,12 @@
 public class Triangolo extends formaAstratta {
-    private double base;
-    private double altezza;
-
-    public double getBase() {
-        return base;
-    }
-
-    public void setBase(double base) {
-        this.base = base;
-    }
+    private final double base;
+    private final double altezza;
 
     public Triangolo(double base, double altezza) {
         this.base = base;
         this.altezza = altezza;
     }
-
-    public double getAltezza() {
-        return altezza;
-    }
-
-    public void setAltezza(double altezza) {
-        this.altezza = altezza;
-    }
-
+//Metto un override del metodo su formaAstratta per andarmi a calcolare l'area
     @Override
     public double calcolaArea() {
         return base * altezza / 2;
